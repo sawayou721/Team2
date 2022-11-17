@@ -20,5 +20,9 @@ public class kuruma extends Actor
             setRotation(0);
             move(1);
         }
+        if( Greenfoot.isKeyDown( "up" ) ){
+            setRotation(-90);
+            move(1);
+        }// Add your action code here.
     }    
 }
