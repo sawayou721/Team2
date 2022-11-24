@@ -29,5 +29,9 @@ public class kuruma extends Actor
             setRotation(90);
             move(1);
         }
+        if( Greenfoot.isKeyDown( "left" ) ){
+            setRotation(180);
+            move(1);
+        }
     }    
 }
