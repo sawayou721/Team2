@@ -24,7 +24,6 @@ public class kuruma extends Actor
             setRotation(-90);
             move(1);
         }// Add your action code here.
-        
         if( Greenfoot.isKeyDown( "down" ) ){
             setRotation(90);
             move(1);
@@ -35,6 +34,5 @@ public class kuruma extends Actor
  
         }// Add your action code here.
         
-
     }    
 }
