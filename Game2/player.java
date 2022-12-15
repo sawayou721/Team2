@@ -17,19 +17,19 @@ public class player extends Actor
                 if( Greenfoot.isKeyDown( "right" ) )
         {
             setRotation(0);
-            move(1);
+            move(3);
         }
         if( Greenfoot.isKeyDown( "up" ) ){
             setRotation(-90);
-            move(1);
+            move(3);
         }// Add your action code here.
         if( Greenfoot.isKeyDown( "down" ) ){
             setRotation(90);
-            move(1);
+            move(3);
         }
         if( Greenfoot.isKeyDown( "left" ) ){
             setRotation(180);
-            move(1);
+            move(3);
  
         }// Add your action code here.
     }    
