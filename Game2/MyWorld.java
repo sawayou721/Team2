@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
-
+    private int timecount = 3000;
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -16,7 +16,18 @@ public class MyWorld extends World
     public MyWorld()
     { 
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+
         super(600, 400, 1); 
         addObject( new player(), 10, 50 );
+
     }
+    public void act() 
+        {
+            timecount--;
+            showText( ""+timecount, 50, 50 );
+            if( timecount == 0 ){
+                showText( "TIME OVER", 400, 200 );
+                Greenfoot.stop();
+            }
+        }
 }
