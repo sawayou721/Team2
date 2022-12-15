@@ -25,9 +25,9 @@ public class MyWorld extends World
     public void act() 
         {
             timecount--;
-            showText( ""+timecount, 25, 25 );
+            showText( ""+timecount, 25, 20 );
             if( timecount == 0 ){
-                showText( "TIME OVER", 400, 200 );
+                showText( "TIME OVER", 300, 200 );
                 Greenfoot.stop();
             }
         }
