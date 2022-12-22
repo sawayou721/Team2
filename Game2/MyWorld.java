@@ -31,4 +31,13 @@ public class MyWorld extends World
                 Greenfoot.stop();
             }
         }
+    public void stopped()
+    {
+        backgroundMusic.pause();
+    }
+ 
+    public void started()
+    {
+        backgroundMusic.playLoop();
+    }
 }
