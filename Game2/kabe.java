@@ -14,6 +14,10 @@ public class kabe extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        Actor actor = getOneIntersectingObject( player.class );
+        if( actor != null ){
+            getWorld().showText( "GAME OVER", 300, 200 );
+            Greenfoot.stop();
+        }   
     }    
 }
