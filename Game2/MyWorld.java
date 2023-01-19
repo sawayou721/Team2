@@ -19,13 +19,22 @@ public class MyWorld extends World
     { 
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1);
-        addObject( new player(), 10, 50 );
+        addObject( new player(), 10, 10 );
+        addObject( new goalflag(), 580, 380 );
         backgroundMusic.playLoop();
+        
+        for(int i=0;i<20;i++){
+            int x = 570;
+            int y = 370;
+            addObject( new kabe(), x, y );  
+        
+        }  
+        
     }
     public void act() 
         {
             timecount--;
-            showText( ""+timecount, 25, 20 );
+            showText( ""+timecount, 570, 10 );
             if( timecount == 0 ){
                 showText( "TIME OVER", 300, 200 );
                 Greenfoot.stop();

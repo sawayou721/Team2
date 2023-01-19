@@ -14,7 +14,7 @@ public class player extends Actor
      */
     public void act() 
     {
-                if( Greenfoot.isKeyDown( "right" ) )
+               if( Greenfoot.isKeyDown( "right" ) )
         {
             setRotation(0);
             move(3);
@@ -31,6 +31,13 @@ public class player extends Actor
             setRotation(180);
             move(3);
  
-        }// Add your action code here.
-    }    
+        }
+
+        Actor goalflag = getOneIntersectingObject( goalflag.class );
+
+        if( goalflag != null ){
+            getWorld().showText( "GAME CLEAR !!", 300, 200 );
+            Greenfoot.stop();// Add your action code here.
+        }
+}
 }
